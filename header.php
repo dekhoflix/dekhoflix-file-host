@@ -1,9 +1,9 @@
 <?php
 $sitename = "Direct Download";
 if (empty($name)) {
-$title = $title.'Direct Download';
+$title = $name.'Direct Download';
 } else {
-$title = $title.' | '.$sitename;
+$title = $name.' '.$sitename;
 }
 
 ?><!DOCTYPE html><html><head><title><?= $title ?></title>
