@@ -19,7 +19,8 @@ if (!empty($_GET['id'])) {
 
 $id = $_GET['id'];
 $uri = base64_decode('aHR0cHM6Ly9kbC5zaGFraWIuY3lvdS9zZXJ2ZXIvanNvbi5waHA/');
-$con = sacms($uri.'id='.$id);
+$con = file_get_contents($uri.'id='.$id); 
+	
 
  $data = json_decode($con); 
 
